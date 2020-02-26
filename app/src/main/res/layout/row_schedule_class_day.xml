@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--Text Time Start-->
+    <TextView
+        android:textColor="#2d2626"
+        android:id="@+id/textViewSTT"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:text="06h45"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--Text Time End-->
+    <TextView
+        android:id="@+id/textViewTimeEnd_Row_Study"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:paddingTop="5dp"
+        android:text="9h00"
+        android:textColor="#2d2626"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSTT" />
+
+    <!--Text Number of Room-->
+    <TextView
+        android:textColor="#2d2626"
+        android:id="@+id/textViewRoom_Exam_Schedule"
+        android:layout_width="55dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="P51"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewSTT"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--Text Name Subjects-->
+    <TextView
+        android:id="@+id/textViewSub"
+        android:layout_width="235dp"
+        android:layout_height="27dp"
+        android:paddingLeft="1dp"
+        android:paddingTop="5dp"
+        android:text="Kĩ thuật điện tử số"
+        android:textColor="#2d2626"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewRoom_Exam_Schedule"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--Text Name Teacher-->
+    <TextView
+        android:id="@+id/textViewTeacher_Row_Study"
+        android:layout_width="235dp"
+        android:layout_height="27dp"
+        android:paddingLeft="1dp"
+        android:paddingTop="5dp"
+        android:text="Phùng Văn Khoang"
+        android:textColor="#2d2626"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewRoom_Exam_Schedule"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSub" />
+
+    <!--Icon Status-->
+    <ImageView
+        android:id="@+id/imageViewIconStatus_Row_Study"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="16dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_button_green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--Stroke -->
+    <ImageView
+        android:id="@+id/imageViewStroke2"
+        android:layout_width="1dp"
+        android:layout_height="59dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginStart="4dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toEndOf="@+id/textViewSTT"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/stroke" />
+    <ImageView
+        android:id="@+id/imageViewStroke3"
+        android:layout_width="1dp"
+        android:layout_height="59dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toStartOf="@+id/textViewSub"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/stroke" />
+    <ImageView
+        android:id="@+id/imageViewStroke4444"
+        android:layout_width="1dp"
+        android:layout_height="59dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewIconStatus_Row_Study"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/stroke" />
+    <ImageView
+        android:id="@+id/imageViewStroke5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewStroke3"
+        app:srcCompat="@drawable/stroke" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/itemMenuTang"
+        android:title="Sắp xếp điểm tăng dần"/>
+    <item android:title="Sắp xếp điểm giảm dần"
+        android:id="@+id/itemMenuGiam"/>
+    <item android:title="Sắp xếp từ A-Z"
+        android:id="@+id/itemMenuAZ"/>
+    <item android:title="Sắp xếp từ Z-A"
+        android:id="@+id/itemMenuZA"/>
+</menu>

@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayoutaaa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout5">
+
+            <!--Text Time Start-->
+
+            <!--Text Time End-->
+
+            <!--Text Number of Room-->
+
+            <!--Text Name Subjects-->
+            <TextView
+                android:id="@+id/textViewTo6546"
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:layout_marginRight="32dp"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="Tổng tiền"
+                android:textColor="#2d2626"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/imageViewStroke44aa44"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!--Text Name Teacher-->
+
+            <!--Icon Status-->
+
+            <!--Stroke -->
+
+            <ImageView
+                android:id="@+id/imageViewStroke44aa44"
+                android:layout_width="1dp"
+                android:layout_height="27dp"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toStartOf="@+id/textViewTongTien"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/stroke" />
+
+            <ImageView
+                android:id="@+id/imageViewStroke536"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewTo6546"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="1.0"
+                app:srcCompat="@drawable/stroke" />
+
+            <TextView
+                android:id="@+id/textViewTongTien"
+                android:layout_width="99dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingLeft="8dp"
+                android:text="Số tiền"
+                android:textColor="#2d2626"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textViewBirth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:text="Ngày sinh: 20/07/1999"
+            android:textColor="#2d2626"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewCodeUser" />
+
+        <TextView
+            android:id="@+id/textViewCodeUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:text="Mã sinh viên: 17A10010203"
+            android:textColor="#2d2626"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewName" />
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="2dp"
+            android:text="Họ tên: Trần Bá Phúc"
+            android:textColor="#2d2626"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewname" />
+
+        <TextView
+            android:id="@+id/textViewClass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:text="Lớp: 1710A03"
+            android:textColor="#2d2626"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewCodeUser" />
+
+        <TextView
+            android:id="@+id/textViewname"
+            android:layout_width="390dp"
+            android:layout_height="45dp"
+            android:background="#2f55ff"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Mã hóa đơn: 216325"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewBirth"
+            app:srcCompat="@drawable/stroke" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayoutaaa23"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayoutaaa">
+
+            <!--Text Time Start-->
+
+            <!--Text Time End-->
+
+            <!--Text Number of Room-->
+
+            <!--Text Name Subjects-->
+            <TextView
+                android:id="@+id/textViewTo6546aa"
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:layout_marginRight="32dp"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="Giảm trừ"
+                android:textColor="#2d2626"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/imageViewStroke44aa44d"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!--Text Name Teacher-->
+
+            <!--Icon Status-->
+
+            <!--Stroke -->
+
+            <ImageView
+                android:id="@+id/imageViewStroke44aa44d"
+                android:layout_width="1dp"
+                android:layout_height="27dp"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toStartOf="@+id/textViewTongTiened"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/stroke" />
+
+            <ImageView
+                android:id="@+id/imageViewStroke53ac6"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewTo6546aa"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="1.0"
+                app:srcCompat="@drawable/stroke" />
+
+            <TextView
+                android:id="@+id/textViewTongTiened"
+                android:layout_width="99dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingLeft="8dp"
+                android:text="Số tiền"
+                android:textColor="#2d2626"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayoutaaabc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayoutaaab">
+
+            <!--Text Time Start-->
+
+            <!--Text Time End-->
+
+            <!--Text Number of Room-->
+
+            <!--Text Name Subjects-->
+            <TextView
+                android:id="@+id/textViewdgaaaaabc"
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:layout_marginRight="32dp"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="Còn phải nộp"
+                android:textColor="#2d2626"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/imageViewStrok4cb"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!--Text Name Teacher-->
+
+            <!--Icon Status-->
+
+            <!--Stroke -->
+
+            <ImageView
+                android:id="@+id/imageViewStrok4cb"
+                android:layout_width="1dp"
+                android:layout_height="27dp"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toStartOf="@+id/textViewNeed"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/stroke" />
+
+            <ImageView
+                android:id="@+id/imageViewStroke536bc"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewStrok4cb"
+                app:srcCompat="@drawable/stroke" />
+
+            <TextView
+                android:id="@+id/textViewNeed"
+                android:layout_width="99dp"
+                android:layout_height="22dp"
+                android:gravity="left"
+                android:paddingLeft="8dp"
+                android:text="Số tiền (VND)"
+                android:textColor="#2d2626"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/imageViewStroke536bc"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayoutaaab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayoutaaa23">
+
+            <!--Text Time Start-->
+
+            <!--Text Time End-->
+
+            <!--Text Number of Room-->
+
+            <!--Text Name Subjects-->
+            <TextView
+                android:id="@+id/textViewdgaaaaab"
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:layout_marginRight="32dp"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="Đã thanh toán"
+                android:textColor="#2d2626"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/imageViewStrok4b"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!--Text Name Teacher-->
+
+            <!--Icon Status-->
+
+            <!--Stroke -->
+
+            <ImageView
+                android:id="@+id/imageViewStrok4b"
+                android:layout_width="1dp"
+                android:layout_height="28dp"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toStartOf="@+id/textViewCosted"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/stroke" />
+
+            <ImageView
+                android:id="@+id/imageViewStroke536b"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewdgaaaaab"
+                app:srcCompat="@drawable/stroke" />
+
+            <TextView
+                android:id="@+id/textViewCosted"
+                android:layout_width="99dp"
+                android:layout_height="22dp"
+                android:gravity="left"
+                android:paddingLeft="8dp"
+                android:text="Số tiền"
+                android:textColor="#2d2626"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView19">
+
+            <!--Text Time Start-->
+            <TextView
+                android:id="@+id/textViewSTT"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="STT"
+                android:textColor="#2d2626"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/imageViewStroke5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!--Text Time End-->
+
+            <!--Text Number of Room-->
+
+            <!--Text Name Subjects-->
+            <TextView
+                android:id="@+id/textViewSub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Môn học"
+                android:textColor="#2d2626"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageViewStroke4444"
+                app:layout_constraintStart_toEndOf="@+id/imageViewStroke2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!--Text Name Teacher-->
+
+            <!--Icon Status-->
+
+            <!--Stroke -->
+            <ImageView
+                android:id="@+id/imageViewStroke2"
+                android:layout_width="1dp"
+                android:layout_height="30dp"
+                android:scaleType="fitXY"
+                app:layout_constraintStart_toEndOf="@+id/textViewSTT"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/stroke" />
+
+            <ImageView
+                android:id="@+id/imageViewStroke4444"
+                android:layout_width="1dp"
+                android:layout_height="30dp"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toStartOf="@+id/textViewMoney"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/stroke" />
+
+            <ImageView
+                android:id="@+id/imageViewStroke5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:scaleType="fitXY"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewStroke4444"
+                app:srcCompat="@drawable/stroke" />
+
+            <TextView
+                android:id="@+id/textViewMoney"
+                android:layout_width="99dp"
+                android:layout_height="22dp"
+                android:gravity="center"
+                android:text="Số tiền (VND)"
+                android:textColor="#2d2626"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/imageViewStroke5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textViewPersonCreate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="3dp"
+            android:text="Người lập: Đinh Thị Việt Nga"
+            android:textColor="#2d2626"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDateCreate" />
+
+        <TextView
+            android:id="@+id/textViewDateCreate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Thời gian lập: 20/10/2018"
+            android:textColor="#2d2626"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayoutaaabc" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout4">
+
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></ListView>
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

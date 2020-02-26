@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/itemAllTime"
+        android:title="Tất cả"/>
+    <item
+        android:id="@+id/item6h45"
+        android:title="6h45 -> 9h00"/>
+    <item
+        android:id="@+id/item9h10"
+        android:title="9h10 -> 11h25" />
+    <item
+        android:id="@+id/item12h45"
+        android:title="12h45 -> 15h00"/>
+    <item
+        android:id="@+id/item15h10"
+        android:title="15h10 -> 17h25"/>
+    <item
+        android:id="@+id/item17h30"
+        android:title="17h30 -> 20h10"/>
+
+</menu>

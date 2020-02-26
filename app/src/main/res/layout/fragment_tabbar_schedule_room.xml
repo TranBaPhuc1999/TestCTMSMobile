@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--Text View chọn ngày-->
+    <TextView
+        android:id="@+id/textViewPickDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/custom_time_show_schedule"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp"
+        android:text="20-26/6/2018"
+        android:textColor="#2d2626"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--Button Show Schedule Class-->
+    <Button
+        android:id="@+id/buttonShowScheduleRoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custom_button_choice_time"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp"
+        android:text="Xem lịch"
+        android:textAllCaps="false"
+        android:textColor="#2d2626"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewTime"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/fillable_area"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:fadeScrollbars="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPickDate">
+
+        <LinearLayout
+            android:id="@+id/fillable_area1"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TableLayout
+                android:id="@+id/fixed_header_column"
+                android:layout_width="80dp"
+                android:layout_height="50dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/custom_header_stroke_schedule_room"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/header" />
+            </TableLayout>
+
+            <HorizontalScrollView
+                android:id="@+id/horizon"
+                android:layout_width="fill_parent"
+                android:scrollbars="none"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:id="@+id/table_header"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+            </HorizontalScrollView>
+        </LinearLayout>
+
+        <ScrollView
+            android:scrollbars="none"
+            android:id="@+id/Scroll"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/fillable_area2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TableLayout
+                    android:id="@+id/fixed_column"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent" />
+
+                <HorizontalScrollView
+                    android:id="@+id/hr_2"
+                    android:scrollbars="none"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TableLayout
+                        android:id="@+id/scrollable_part"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" />
+                </HorizontalScrollView>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBarLoadingRoom"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="381dp"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:paddingLeft="160dp"
+        android:paddingRight="160dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/itemAllRoom"
+        android:title="Tất cả"/>
+    <item
+        android:id="@+id/itemFloor2"
+        android:title="Tầng 2">
+        <menu>
+            <item android:id="@+id/itemRoom21"
+                android:title="Phòng 21"/>
+            <item android:id="@+id/itemRoom22"
+                android:title="Phòng 22"/>
+            <item android:id="@+id/itemRoom23"
+                android:title="Phòng 23"/>
+            <item android:id="@+id/itemRoom24"
+                android:title="Phòng 24"/>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/itemFloor3"
+        android:title="Tầng 3" >
+        <menu>
+            <item android:id="@+id/itemRoom31"
+                android:title="Phòng 31"/>
+            <item android:id="@+id/itemRoom32"
+                android:title="Phòng 32"/>
+            <item android:id="@+id/itemRoom33"
+                android:title="Phòng 33"/>
+            <item android:id="@+id/itemRoom34"
+                android:title="Phòng 34"/>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/itemFloor4"
+        android:title="Tầng 4">
+        <menu>
+            <item android:id="@+id/itemRoom41"
+                android:title="Phòng 41"/>
+            <item android:id="@+id/itemRoom42"
+                android:title="Phòng 42"/>
+            <item android:id="@+id/itemRoom43"
+                android:title="Phòng 43"/>
+            <item android:id="@+id/itemRoom44"
+                android:title="Phòng 44"/>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/itemFloor5"
+        android:title="Tầng 5">
+        <menu>
+            <item android:id="@+id/itemRoom51"
+                android:title="Phòng 51"/>
+            <item android:id="@+id/itemRoom52"
+                android:title="Phòng 52"/>
+        </menu>
+    </item>
+</menu>

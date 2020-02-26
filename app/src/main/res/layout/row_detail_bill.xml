@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--Text Time Start-->
+    <TextView
+        android:id="@+id/textViewSTT"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="#2d2626"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewStroke5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--Text Time End-->
+
+    <!--Text Number of Room-->
+
+    <!--Text Name Subjects-->
+    <TextView
+        android:id="@+id/textViewSub"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingLeft="5dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:scrollHorizontally="true"
+        android:text="Kĩ thuật điện tử số"
+        android:textColor="#2d2626"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewStroke4444"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageViewStroke2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewNumberTC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:paddingBottom="3dp"
+        android:paddingRight="5dp"
+        android:text="Số tín: 4"
+        android:textSize="13sp"
+        android:textColor="#2d2626"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewStroke5"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewStroke4444" />
+
+    <!--Icon Status-->
+    <TextView
+        android:id="@+id/textViewCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="3dp"
+        android:textSize="13sp"
+        android:text="Đơn giá: 315000"
+        android:textColor="#2d2626"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewStroke5"
+        app:layout_constraintStart_toEndOf="@+id/imageViewStroke2" />
+
+    <!--Stroke -->
+    <ImageView
+        android:id="@+id/imageViewStroke2"
+        android:layout_width="1dp"
+        android:layout_height="48dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toEndOf="@+id/textViewSTT"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/stroke" />
+
+    <ImageView
+        android:id="@+id/imageViewStroke4444"
+        android:layout_width="1dp"
+        android:layout_height="48dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toStartOf="@+id/textViewMoney"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/stroke" />
+
+    <ImageView
+        android:id="@+id/imageViewStroke5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewStroke4444"
+        app:srcCompat="@drawable/stroke" />
+
+    <TextView
+        android:id="@+id/textViewMoney"
+        android:layout_width="99dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:text="100"
+        android:textColor="#2d2626"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewStroke5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

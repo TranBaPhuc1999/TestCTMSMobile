@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Nav_Show_Exam_Schedule">
+
+    <ImageView
+        android:id="@+id/imageViewStroke7"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/stroke" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupSelect_Exam_Schedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/radioButtonSoon_Exam_Schedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="Sắp thi"
+            android:textAllCaps="false" />
+
+        <RadioButton
+            android:id="@+id/radioButtonDone_Exam_Schedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="Đã thi" />
+
+        <RadioButton
+            android:id="@+id/radioButtonAll_Exam_Schedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="Tất cả" />
+    </RadioGroup>
+
+    <ListView
+        android:scrollbars="none"
+        android:id="@+id/listViewExamSchedule"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="124dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+    <android.support.constraint.ConstraintLayout
+        android:background="#cfeeff"
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupSelect_Exam_Schedule">
+
+        <!--Text Time Start-->
+        <TextView
+            android:id="@+id/textViewSTT"
+            android:layout_width="88dp"
+            android:layout_height="53dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+            android:text="Thời gian"
+            android:textColor="#2d2626"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--Text Time End-->
+
+        <!--Text Number of Room-->
+        <TextView
+            android:id="@+id/textViewRoom_Exam_Schedule"
+            android:layout_width="55dp"
+            android:layout_height="58dp"
+            android:gravity="center"
+            android:text="Phòng thi"
+            android:textColor="#2d2626"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/imageViewStroke2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--Text Name Subjects-->
+        <TextView
+            android:id="@+id/textViewSub"
+            android:layout_width="160dp"
+            android:layout_height="58dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginStart="4dp"
+            android:gravity="center"
+            android:paddingLeft="1dp"
+            android:paddingTop="5dp"
+            android:text="Môn thi"
+            android:textColor="#2d2626"
+            android:textSize="24sp"
+            app:layout_constraintStart_toEndOf="@+id/textViewRoom_Exam_Schedule"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--Text Name Teacher-->
+
+        <!--Icon Status-->
+
+        <!--Stroke -->
+        <ImageView
+            android:id="@+id/imageViewStroke2"
+            android:layout_width="1dp"
+            android:layout_height="59dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginStart="3dp"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toEndOf="@+id/textViewSTT"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/stroke" />
+
+        <ImageView
+            android:id="@+id/imageViewStroke3"
+            android:layout_width="1dp"
+            android:layout_height="59dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginRight="4dp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toStartOf="@+id/textViewSub"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/stroke" />
+
+        <ImageView
+            android:id="@+id/imageViewStroke4444"
+            android:layout_width="1dp"
+            android:layout_height="59dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginStart="4dp"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toEndOf="@+id/textViewSub"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/stroke" />
+
+        <ImageView
+            android:id="@+id/imageViewStroke5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewStroke3"
+            app:srcCompat="@drawable/stroke" />
+
+        <TextView
+            android:id="@+id/textViewCode_Exam_Schedule"
+            android:layout_width="40dp"
+            android:layout_height="58dp"
+            android:gravity="center"
+            android:text="Mã DS thi"
+            android:textColor="#2d2626"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/imageViewStroke4444"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:text="Bộ lọc"
+        android:textColor="#2d2626"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/radioGroupSelect_Exam_Schedule"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

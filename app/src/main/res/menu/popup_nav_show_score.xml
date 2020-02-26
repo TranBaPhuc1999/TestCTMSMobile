@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/itemMenuTatca"
+        android:title="Tất cả"/>
+    <item
+        android:id="@+id/itemMenuChuaQua"
+        android:title="Môn chưa qua" />
+    <item
+        android:id="@+id/itemMenuCaiThien"
+        android:title="Môn cần cải thiện"/>
+    <item
+        android:id="@+id/itemMenuDiemTB"
+        android:title="Môn điểm trung bình"/>
+    <item
+        android:title="Môn điểm cao"
+        android:id="@+id/itemMenuDiemCao"/>
+</menu>

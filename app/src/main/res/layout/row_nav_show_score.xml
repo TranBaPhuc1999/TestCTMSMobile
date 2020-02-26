@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:id="@+id/textViewSub"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingLeft="5dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="2dp"
+        android:text="LT hướng đối tượng"
+        android:textAllCaps="false"
+        android:textColor="#29166F"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewStroke4444"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--Text Name Teacher-->
+    <TextView
+        android:id="@+id/textViewTeacher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="3dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="4dp"
+        android:textSize="13sp"
+        android:text="Phùng Văn Khoang"
+        android:textColor="#2d2626"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewStroke5" />
+
+
+
+    <!--Stroke -->
+
+    <ImageView
+        android:id="@+id/imageViewStroke3"
+        android:layout_width="1dp"
+        android:layout_height="59dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toStartOf="@+id/textViewTotalScore"
+        app:layout_constraintStart_toEndOf="@+id/textViewFinalExaminationScore"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/stroke" />
+
+    <ImageView
+        android:id="@+id/imageViewStroke"
+        android:layout_width="1dp"
+        android:layout_height="59dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toStartOf="@+id/textViewFinalExaminationScore"
+        app:layout_constraintStart_toEndOf="@+id/textViewTestScore"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/stroke" />
+
+    <ImageView
+        android:id="@+id/imageViewStroke4444"
+        android:layout_width="1dp"
+        android:layout_height="59dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toStartOf="@+id/textViewDiligenceScore"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/stroke" />
+
+    <ImageView
+        android:id="@+id/imageViewStroke2"
+        android:layout_width="1dp"
+        android:layout_height="59dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toStartOf="@+id/textViewTestScore"
+        app:layout_constraintStart_toEndOf="@+id/textViewDiligenceScore"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/stroke" />
+
+    <TextView
+        android:id="@+id/textViewTestScore"
+        android:layout_width="40dp"
+        android:layout_height="59dp"
+        android:gravity="center"
+        android:text="Kiểm tra"
+        android:textColor="#2d2626"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textViewFinalExaminationScore"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewFinalExaminationScore"
+        android:layout_width="35dp"
+        android:layout_height="59dp"
+        android:gravity="center"
+        android:text="Thi"
+        android:textColor="#2d2626"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textViewTotalScore"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewTotalScore"
+        android:layout_width="40dp"
+        android:layout_height="59dp"
+        android:gravity="center"
+        android:text="Tổng kết"
+        android:textColor="#2d2626"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewDiligenceScore"
+        android:layout_width="50dp"
+        android:layout_height="59dp"
+        android:gravity="center"
+        android:text="Chuyên cần"
+        android:textColor="#2d2626"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textViewTestScore"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewStroke5"
+        android:layout_width="130dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="4dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSub"
+        app:srcCompat="@drawable/stroke" />
+
+    <ImageView
+        android:id="@+id/imageViewStroke6"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewStroke3"
+        app:srcCompat="@drawable/stroke" />
+
+    <TextView
+        android:id="@+id/textViewTCNumber"
+        android:layout_width="26dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="4dp"
+        android:text="5"
+        android:textColor="#29166F"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewStroke6"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewStroke4444" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:drawable="@drawable/text_status_click_schedule_room" />
+    <item>
+        <shape>
+            <corners android:radius="10dp"/>
+            <stroke android:width="1dp" android:color="#29166F"/>
+            <padding android:left="10dp" android:right="10dp" android:top="3dp" android:bottom="3dp"/>
+        </shape>
+    </item>
+</selector>

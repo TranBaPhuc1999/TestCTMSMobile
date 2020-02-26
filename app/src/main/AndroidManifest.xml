@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dmt.tranbaphuc1999.ctms">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Web_view"
+            android:label="@string/title_activity_web_view"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".Nav_Show_Score"
+            android:label="Bảng điểm"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Nav_Show_Exam_Schedule"
+            android:label="Lịch thi"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Nav_Help"
+            android:label="Phản hồi"
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Nav_List_Teacher"
+            android:label="Hồ sơ giảng viên"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Nav_List_Subjects"
+            android:label="Chương trình đào tạo"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Nav_Service_OCC"
+            android:label="Dịch vụ OCC"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Nav_bill"
+            android:label="Hoá đơn học phí"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:theme="@style/SplashscreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login"
+            android:windowSoftInputMode="adjustPan" />
+    </application>
+
+</manifest>

@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#cfeeff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTongTC">
+
+
+        <TextView
+            android:id="@+id/textViewSub"
+            android:layout_width="218dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="Môn học"
+            android:textAllCaps="false"
+            android:textColor="#29166F"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--Text Name Teacher-->
+        <TextView
+            android:id="@+id/textViewTeacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="3dp"
+            android:text="Giảng viên"
+            android:textColor="#2d2626"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewStroke5" />
+
+
+        <!--Stroke -->
+
+        <ImageView
+            android:id="@+id/imageViewStroke3"
+            android:layout_width="1dp"
+            android:layout_height="55dp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toStartOf="@+id/textViewTotalScore"
+            app:layout_constraintStart_toEndOf="@+id/textViewFinalExaminationScore"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/stroke" />
+
+        <ImageView
+            android:id="@+id/imageViewStroke"
+            android:layout_width="1dp"
+            android:layout_height="55dp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toStartOf="@+id/textViewFinalExaminationScore"
+            app:layout_constraintStart_toEndOf="@+id/textViewTestScore"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/stroke" />
+
+        <ImageView
+            android:id="@+id/imageViewStroke4444"
+            android:layout_width="1dp"
+            android:layout_height="55dp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toStartOf="@+id/textViewDiligenceScore"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/stroke" />
+
+        <ImageView
+            android:id="@+id/imageViewStroke2"
+            android:layout_width="1dp"
+            android:layout_height="55dp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toStartOf="@+id/textViewTestScore"
+            app:layout_constraintStart_toEndOf="@+id/textViewDiligenceScore"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/stroke" />
+
+        <TextView
+            android:id="@+id/textViewTestScore"
+            android:layout_width="40dp"
+            android:layout_height="55dp"
+            android:gravity="center"
+            android:text="Kiểm tra"
+            android:textColor="#2d2626"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/textViewFinalExaminationScore"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewFinalExaminationScore"
+            android:layout_width="35dp"
+            android:layout_height="55dp"
+            android:gravity="center"
+            android:text="Thi"
+            android:textColor="#2d2626"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/textViewTotalScore"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewTotalScore"
+            android:layout_width="40dp"
+            android:layout_height="55dp"
+            android:gravity="center"
+            android:text="Tổng kết"
+            android:textColor="#2d2626"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewDiligenceScore"
+            android:layout_width="50dp"
+            android:layout_height="55dp"
+            android:gravity="center"
+            android:text="Chuyên cần"
+            android:textColor="#2d2626"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/textViewTestScore"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewStroke5"
+            android:layout_width="130dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="4dp"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewSub"
+            app:srcCompat="@drawable/stroke" />
+
+        <ImageView
+            android:id="@+id/imageViewStroke6"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTeacher"
+            app:srcCompat="@drawable/stroke" />
+
+        <TextView
+            android:id="@+id/textViewCode_Exam_Schedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingRight="3dp"
+            android:paddingBottom="4dp"
+            android:text="Tín chỉ"
+            android:textColor="#29166F"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/imageViewStroke6"
+            app:layout_constraintEnd_toStartOf="@+id/imageViewStroke4444" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textViewKind"
+        android:layout_width="150dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/stroke_textview"
+        android:gravity="center"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:text="Tất cả"
+        android:textColor="#2d2626"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewSort"
+        android:layout_width="150dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/stroke_textview"
+        android:gravity="center"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:text="Tăng dần"
+        android:textColor="#2d2626"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewTBC"
+        android:layout_width="150dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/custom_time_show_schedule"
+        android:gravity="center"
+        android:text="TB tích lũy: 3.56"
+        android:textColor="#2d2626"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSort" />
+
+    <TextView
+        android:id="@+id/textViewTongTC"
+        android:layout_width="150dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/custom_time_show_schedule"
+        android:gravity="center"
+        android:text="Tổng số tín chỉ: 67"
+        android:textColor="#2d2626"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewKind" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/stroke" />
+
+    <ListView
+        android:scrollbars="none"
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="135dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <TextView
+        android:id="@+id/textViewStatusSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/listview" />
+
+</android.support.constraint.ConstraintLayout>
