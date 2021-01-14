@@ -21,7 +21,7 @@ Application to access CTMS (FITHOU) mobile version
 * Android 4.0.3 +
 
 ## Development team
-* [Phuc Tran Ba](https://github.com/TranBaPhuc1999)
+* [Phuc Tran Ba](https://github.com/phuctranba)
 
 ## Development purpose
 Personal projects
